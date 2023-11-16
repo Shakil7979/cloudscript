@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <title>CloudScript</title>
+        <link rel="icon" href="assets/images/favicon.png">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Fontawesome -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!-- Normalize -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+        <div id="preloader">
+			<div id="status"><img src="assets/images/favicon.png" alt="logo"></div>
+		</div>
+        <!--=================================================================================
+        ====================              Start Header Section            ===================
+        ==================================================================================-->
+        <header class="header_main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo">
+                            <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="body_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top_info">
+                            <h1>Adverse Events Following Immunisation (AEFI) reporting form</h1>
+                        </div>
+                        <!--Start Report form -->
+                        <div class="report_main_area">
+                            <div class="report_form_item">
+                                <form action="">
+                                    <div class="single_input_item">
+                                        <label for="date_report">Date of Report</label>
+                                        <input type="date" id="date_report" >
+                                    </div>
+                                    <div class="patient_details_box">
+                                        <h2>PATIENT OR VACCINATED PERSON’S DETAILS</h2>
+                                        <div class="form_cover_box">
+                                            <!-- multipole2 input -->
+                                            <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="FirstName">First Name</label>
+                                                    <input type="text" id="FirstName" placeholder="Your first name">
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="lasttName">Last Name</label>
+                                                    <input type="text" id="lasttName" placeholder="Your last name">
+                                                </div>
+                                            </div>
+                                        <!-- multipole more radio -->
+                                            <div class="multipole_radio">
+                                                <span>SEX</span>
+                                                <div class="multipole_radio_items custom_radio_check">
+                                                    
+                                                    <div class="multipole_radio_item">
+                                                        <input type="radio" name="patent-sex" id="Female">
+                                                        <label for="Female"></label>
+                                                    </div>
+                                                    <label for="Female" class="label_custom">Female</label>
+                                                   
+                                                    <div class="multipole_radio_item">
+                                                        
+                                                        <input type="radio" id="Male" name="patent-sex">
+                                                        <label for="Male"></label>
+                                                    </div>
+                                                    <label for="Male" class="label_custom">Male</label>
+                                                   
+                                                    <div class="multipole_radio_item">
+                                                    
+                                                        <input type="radio" id="Other" name="patent-sex">
+                                                        <label for="Other"></label>
+                                                    </div>
+                                                    <label for="Other" class="label_custom">Other/Unknown</label>
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- age fild -->
+                                            <div class="age_checkbox_item">
+                                                <div class="age_item">
+                                                    <label for="age">Age</label>
+                                                    <input type="number" id="age" placeholder="Your Age">
+                                                </div>
+                                                <div class="age_chekbox_area">
+                                                    <div class="multipole_radio_items custom_radio_check">
+                                                    
+                                                        <div class="multipole_radio_item">
+                                                            <input type="radio" name="patent-age" id="DOB">
+                                                            <label for="DOB"></label>
+                                                        </div>
+                                                        <label for="DOB" class="label_custom">DOB</label>
+                                                       
+                                                        <div class="multipole_radio_item">
+                                                            
+                                                            <input type="radio" id="Age" name="patent-age">
+                                                            <label for="Age"></label>
+                                                        </div>
+                                                        <label for="Age" class="label_custom">Age</label>
+                                                       
+                                                        <div class="multipole_radio_item">
+                                                        
+                                                            <input type="radio" id="Unknown" name="patent-age">
+                                                            <label for="Unknown"></label>
+                                                        </div>
+                                                        <label for="Other" class="label_custom">Unknown</label>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <!-- multipole2 input -->
+                                             <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="Address">Street Address</label>
+                                                    <input type="text" id="Address" placeholder="Street Address">
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="District">Surburb/District</label>
+                                                    <input type="text" id="District" placeholder="Surburb/District">
+                                                </div>
+                                            </div>
+                                            <!-- multipole2 input -->
+                                            <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item after_icon">
+                                                    <label for="Country">Country</label>
+                                                    <select name="" id="" >
+                                                        <option value="">Select Country</option>
+                                                        <option value="">BANGLADESH</option>
+                                                        <option value="">USA</option>
+                                                        <option value="">CANADA</option>
+                                                    </select>
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="Mobile">Mobile</label>
+                                                    <input type="text" id="Mobile" placeholder="Phone Number">
+                                                </div>
+                                            </div>
+                                             <!-- multipole2 input -->
+                                             <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="Email">Email</label>
+                                                    <input type="email" id="Email" placeholder="Email Address">
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="Postcode">Postcode</label>
+                                                    <input type="text" id="Postcode" placeholder="Postcode">
+                                                </div>
+                                            </div>
+                                             <!-- multipole2 input -->
+                                             <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="guardian">Name of parent/guardian If Relevant</label>
+                                                    <input type="text" id="guardian" placeholder="Name of parent/guardian">
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="Postcode">Citizenship</label>
+                                                    <input type="text" id="Citizenship" placeholder="Citizenship">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="report_form_item">
+                                <form action="">
+                                    <div class="single_input_item after_icon">
+                                        <label for="date_report">Reporter</label>
+                                        <select name="" id="">
+                                            <option value="">Select Reporter</option>
+                                            <option value="">Select Reporter</option>
+                                            <option value="">Select Reporter</option>
+                                            <option value="">Select Reporter</option>
+                                        </select>
+                                    </div>
+                                    <div class="patient_details_box">
+                                        <h2 style="background: linear-gradient(89deg, #04FBCD 2.64%, #03B2FF 98.06%);
+                                        ">VACCINATION PROVIDER DETAILS</h2>
+                                        <div class="form_cover_box">
+                                            <!-- multipole2 input -->
+                                            <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="vFirstName">First Name</label>
+                                                    <input type="text" id="vFirstName" placeholder="Your first name">
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="vlasttName">Last Name</label>
+                                                    <input type="text" id="vlasttName" placeholder="Your last name">
+                                                </div>
+                                            </div>
+                                        <!-- multipole more radio -->
+                                            <div class="multipole_radio">
+                                                <span>SEX</span>
+                                                <div class="multipole_radio_items custom_radio_check">
+                                                    
+                                                    <div class="multipole_radio_item">
+                                                        <input type="radio" name="vpatent-sex" id="vFemale">
+                                                        <label for="vFemale"></label>
+                                                    </div>
+                                                    <label for="vFemale" class="label_custom">Female</label>
+                                                   
+                                                    <div class="multipole_radio_item">
+                                                        
+                                                        <input type="radio" id="vMale" name="vpatent-sex">
+                                                        <label for="vMale"></label>
+                                                    </div>
+                                                    <label for="vMale" class="label_custom">Male</label>
+                                                   
+                                                    <div class="multipole_radio_item">
+                                                    
+                                                        <input type="radio" id="vOther" name="vpatent-sex">
+                                                        <label for="vOther"></label>
+                                                    </div>
+                                                    <label for="vOther" class="label_custom">Other/Unknown</label>
+                                                    
+                                                </div>
+                                            </div>
+                                          
+                                             <!-- multipole2 input -->
+                                             <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="vAddress">Street Address</label>
+                                                    <input type="text" id="vAddress" placeholder="Street Address">
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="vDistrict">Surburb/District</label>
+                                                    <input type="text" id="vDistrict" placeholder="Surburb/District">
+                                                </div>
+                                            </div>
+                                            <!-- multipole2 input -->
+                                            <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item after_icon">
+                                                    <label for="vCountry">Country</label>
+                                                    <select name="" id="vCountry" >
+                                                        <option value="">Select Country</option>
+                                                        <option value="">BANGLADESH</option>
+                                                        <option value="">USA</option>
+                                                        <option value="">CANADA</option>
+                                                    </select>
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="vMobile">Mobile</label>
+                                                    <input type="text" id="vMobile" placeholder="Phone Number">
+                                                </div>
+                                            </div>
+                                             <!-- multipole2 input -->
+                                             <div class="more_input_items">
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item">
+                                                    <label for="vEmail">Email</label>
+                                                    <input type="email" id="vEmail" placeholder="Email Address">
+                                                </div>
+                                                <!-- 2/1 input -->
+                                                <div class="more_input_item after_icon">
+                                                    <label for="vProfession">Profession</label>
+                                                    <select name="" id="vProfession">
+                                                        <option value="">Profession</option>
+                                                        <option value="">Profession 2</option>
+                                                        <option value="">Profession 3</option>
+                                                        <option value="">Profession 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="single_input_item after_icon Clinical">
+                                                <label for="vClinical">Clinical Setting</label>
+                                                <select name="" id="vClinical">
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Report Form -->
+                        <!-- Start medical details area -->
+                        <div class="medical_details_area">
+                            <div class="common_heading">
+                                <h3>PATIENT OR VACCINATED MEDICAL DETAILS</h3>
+                            </div>
+                            <div class="medical_details_item_area">
+                               <form action="">
+                                 <!-- item -->
+                                 <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>Was the vaccinated person pregnant at the time of vaccination?</span>
+                                        <div class="multipole_radio_items custom_radio_check">
+                                            
+                                            <div class="multipole_radio_item">
+                                                <input type="radio" class="sk_cst_radio" value="1" name="time" id="time">
+                                                <label for="time"></label>
+                                            </div>
+                                            <label for="time" class="label_custom">Yes</label>
+                                            <div class="multipole_radio_item">
+                                                
+                                                <input type="radio" class="sk_cst_radio" value="2" id="time_no" name="time">
+                                                <label for="time_no"></label>
+                                            </div>
+                                            <label for="time_no" class="label_custom">No</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                            
+                                                <input type="radio" class="sk_cst_radio" value="3" id="time_unkown" name="time">
+                                                <label for="time_unkown"></label>
+                                            </div>
+                                            <label for="time_on" class="label_custom">Unknown</label>
+                                            
+                                        </div>
+                                    </div> 
+                                    <div class="sk_custom_input custom_sk_one">
+                                        <input type="text" placeholder="Type Here">
+                                   </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>Has the vaccinated person ever been diagnosed with COVID-19?</span>
+                                        <div class="multipole_radio_items custom_radio_check">
+                                            
+                                            <div class="multipole_radio_item">
+                                                <input type="radio"  class="sk_cst_radio_two" value="1"  name="COVID" id="COVID_yes">
+                                                <label for="COVID_yes"></label>
+                                            </div>
+                                            <label for="COVID_yes" class="label_custom">Yes</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                                
+                                                <input type="radio"  class="sk_cst_radio_two" value="2"  id="COVID_no" name="COVID">
+                                                <label for="COVID_no"></label>
+                                            </div>
+                                            <label for="COVID_no" class="label_custom">No</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                            
+                                                <input type="radio"  class="sk_cst_radio_two" value="3"  id="COVID_un" name="COVID">
+                                                <label for="COVID_un"></label>
+                                            </div>
+                                            <label for="COVID_un" class="label_custom">Unknown</label>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="sk_custom_input custom_sk_two">
+                                        <input type="text" placeholder="Type Here">
+                                   </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>Has the vaccinated person had previous reactions to vaccinations?</span>
+                                        <div class="multipole_radio_items custom_radio_check">
+                                            
+                                            <div class="multipole_radio_item">
+                                                <input type="radio" class="sk_cst_radio_three" value="1" name="reactions" id="reactions_yes">
+                                                <label for="reactions_yes"></label>
+                                            </div>
+                                            <label for="reactions_yes" class="label_custom">Yes</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                                
+                                                <input type="radio" class="sk_cst_radio_three" value="2" id="reactions_no" name="reactions">
+                                                <label for="reactions_no"></label>
+                                            </div>
+                                            <label for="reactions_no" class="label_custom">No</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                            
+                                                <input type="radio"  class="sk_cst_radio_three" value="3" id="reactions_un" name="reactions">
+                                                <label for="reactions_un"></label>
+                                            </div>
+                                            <label for="reactions_un" class="label_custom">Unknown</label>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="sk_custom_input custom_sk_three">
+                                        <input type="text" placeholder="Type Here">
+                                   </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>Does the vaccinated person have any allergies?</span>
+                                        <div class="multipole_radio_items custom_radio_check">
+                                            
+                                            <div class="multipole_radio_item">
+                                                <input type="radio" class="sk_cst_radio_four" value="1"  name="allergies" id="allergies_yes">
+                                                <label for="allergies_yes"></label>
+                                            </div>
+                                            <label for="allergies_yes" class="label_custom">Yes</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                                
+                                                <input type="radio" class="sk_cst_radio_four" value="2"  id="allergies_no" name="allergies">
+                                                <label for="allergies_no"></label>
+                                            </div>
+                                            <label for="allergies_no" class="label_custom">No</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                            
+                                                <input type="radio" class="sk_cst_radio_four" value="3"  id="allergies_un" name="allergies">
+                                                <label for="allergies_un"></label>
+                                            </div>
+                                            <label for="allergies_un" class="label_custom">Unknown</label>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="sk_custom_input custom_sk_four">
+                                        <input type="text" placeholder="Type Here">
+                                   </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <div class="sk_app_data">
+                                            <div class="sk_custom_group mb-3">
+                                                <span>Please provide details of any medical history including details of previous vaccination reactions</span>
+                                                <textarea name="" id="" cols="30" rows="10"></textarea> 
+                                            </div>  
+                                        </div>
+                                          <a href="#" class="provide_add_more btn1">Add More <i class="fa fa-plus" aria-hidden="true"></i></a> 
+                                    </div>
+                                </div>
+                               </form>
+                            </div>
+                        </div>
+                        <div class="medical_details_area">
+                            <div class="common_heading">
+                                <h3>ADVERSE EVENTS DETAILS</h3>
+                            </div>
+                            <div class="medical_details_item_area">
+                               <form action="">
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <div class="sk_append_data_two">
+                                            <div class="sk_append_text_two mb-3">
+                                                <span>Please describe the events, including timeline of occurrences:</span>
+                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                          <a href="#" class="btn1 describe_btn">Add More <i class="fa fa-plus" aria-hidden="true"></i></a> 
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="single_input_item after_icon">
+                                        <label for="Clinical">Who treated this reaction?</label>
+                                        <select name="" id="Clinical">
+                                            <option value="">Select one</option>
+                                            <option value="">Select 2</option>
+                                            <option value="">Select 3</option>
+                                            <option value="">Select 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>Please tell us about the treatment/care provided? (Eg antibiotics, adrenaline, advice, counseling etc)</span>
+                                         <textarea name="" id="" cols="30" rows="10"></textarea>
+                                          
+                                    </div>
+                                </div>
+                                <!-- itme -->
+                                <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <div class="sk_append_data_three">
+                                            <div class="sk_append_text_three mb-3">
+                                                <span>Please tell us about the medications and/or vaccines the person has had in the last 4 weeks.</span>
+                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                          <a href="#" class="btn1 medcate_about_btn">Add More <i class="fa fa-plus" aria-hidden="true"></i></a> 
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>Was the person sick when they had the vaccination?</span>
+                                        <div class="multipole_radio_items custom_radio_check">
+                                            
+                                            <div class="multipole_radio_item">
+                                                <input type="radio" name="sick" id="sick_yes">
+                                                <label for="sick_yes"></label>
+                                            </div>
+                                            <label for="sick_yes" class="label_custom">Yes</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                                
+                                                <input type="radio" id="sick_no" name="sick">
+                                                <label for="sick_no"></label>
+                                            </div>
+                                            <label for="sick_no" class="label_custom">No</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                            
+                                                <input type="radio" id="sick_on" name="sick">
+                                                <label for="sick_on"></label>
+                                            </div>
+                                            <label for="sick_on" class="label_custom">Unknown</label>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+				<!-- item -->
+                                 <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>Has this report been sent to others?</span>
+                                        <div class="multipole_radio_items custom_radio_check">
+                                            
+                                            <div class="multipole_radio_item">
+                                                <input type="radio" name="pat_report" id="pat_report_yes">
+                                                <label for="pat_report_yes"></label>
+                                            </div>
+                                            <label for="pat_report_yes" class="label_custom">Yes</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                                
+                                                <input type="radio" id="pat_report_no" name="pat_report">
+                                                <label for="pat_report_no"></label>
+                                            </div>
+                                            <label for="pat_report_no" class="label_custom">No</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                            
+                                                <input type="radio" id="pat_report_un" name="pat_report">
+                                                <label for="pat_report_un"></label>
+                                            </div>
+                                            <label for="pat_report_un" class="label_custom">Unknown</label>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="medical_details_single_item">
+                                    <div class="single_input_item after_icon">
+                                        <label for="vaccines">How many vaccines did the person have together?</label>
+                                        <select name="" id="vaccines">
+                                            <option value="">Select one</option>
+                                            <option value="">Select 2</option>
+                                            <option value="">Select 3</option>
+                                            <option value="">Select 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+	
+
+
+
+
+                                 
+                                
+                               </form>
+                            </div>
+                        </div>
+                        <!-- End medical details area -->
+                        <!-- Start outcome -->
+                        <div class="medical_details_area Outcomes_area">
+                            <div class="common_heading">
+                                <h3>Outcomes</h3>
+                            </div>
+                            <div class="medical_details_item_area">
+                               <form action="">
+                                 <!-- item -->
+                                 <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>Have the symptoms resolved?</span>
+                                        <div class="multipole_radio_items custom_radio_check">
+                                            
+                                            <div class="multipole_radio_item">
+                                                <input type="radio" name="Outcomes_radio" id="resolved_yes">
+                                                <label for="resolved_yes"></label>
+                                            </div>
+                                            <label for="resolved_yes" class="label_custom">Yes</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                                
+                                                <input type="radio" id="resolved_no" name="Outcomes_radio">
+                                                <label for="resolved_no"></label>
+                                            </div>
+                                            <label for="resolved_no" class="label_custom">No</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                            
+                                                <input type="radio" id="resolved_no_un" name="Outcomes_radio">
+                                                <label for="resolved_no_un"></label>
+                                            </div>
+                                            <label for="resolved_no_un" class="label_custom">Unknown</label>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="vaccine_details">
+                                        <h4>Vaccine Details</h4>
+                                        <!-- item -->
+                                        <div class="append_data_details">
+                                            <div class="vaccine_details_item">
+                                                <div class="vaccine_list_number">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="vaccine_details_input_area">
+                                                    <input type="text" placeholder="Vaccine ( Brand Name)">
+                                                    <input type="text" placeholder="Dose No">
+                                                    <input type="text" placeholder="Batch No">
+                                                    <input type="text" placeholder="Date Given">
+                                                    <input type="text" placeholder="Time">
+                                                    <input type="text" placeholder="Route">
+                                                    <input type="text" placeholder="Site">
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="vaccine_details_item">
+                                                <div class="vaccine_list_number">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="vaccine_details_input_area">
+                                                    <input type="text" placeholder="Vaccine ( Brand Name)">
+                                                    <input type="text" placeholder="Dose No">
+                                                    <input type="text" placeholder="Batch No">
+                                                    <input type="text" placeholder="Date Given">
+                                                    <input type="text" placeholder="Time">
+                                                    <input type="text" placeholder="Route">
+                                                    <input type="text" placeholder="Site">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn1 details_append_btn">Add More <i class="fa fa-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="medical_details_single_item">
+                                    <div class="single_input_item  single_input_item_report after_icon">
+                                        <label for="Reporter">Reporter Details</label>
+                                        <select name="" id="Reporter">
+                                            <option value="">PATIENT OR VACCINATED PERSON’S DETAILS</option>
+                                            <option value="">PATIENT OR VACCINATED PERSON’S DETAILS</option>
+                                            <option value="">PATIENT OR VACCINATED PERSON’S DETAILS</option>
+                                            <option value="">PATIENT OR VACCINATED PERSON’S DETAILS4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- item outcomes -->
+                                <div class="patient_details_box ">
+                                    <h3 class="Outcomes">Outcomes</h3>
+                                    <div class="form_cover_box">
+                                        <!-- multipole2 input -->
+                                        <div class="more_input_items">
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item">
+                                                <label for="FirstName">First Name</label>
+                                                <input type="text" id="FirstName" placeholder="Your first name">
+                                            </div>
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item">
+                                                <label for="lasttName">Last Name</label>
+                                                <input type="text" id="lasttName" placeholder="Your last name">
+                                            </div>
+                                        </div>
+                                    <!-- multipole more radio -->
+                                        <div class="multipole_radio">
+                                            <span>SEX</span>
+                                            <div class="multipole_radio_items custom_radio_check">
+                                                
+                                                <div class="multipole_radio_item">
+                                                    <input type="radio" name="outcome_user" id="outcome_gender_f">
+                                                    <label for="outcome_gender_f"></label>
+                                                </div>
+                                                <label for="outcome_gender_f" class="label_custom">Female</label>
+                                               
+                                                <div class="multipole_radio_item">
+                                                    
+                                                    <input type="radio" id="outcome_gender_m" name="outcome_user">
+                                                    <label for="outcome_gender_m"></label>
+                                                </div>
+                                                <label for="outcome_gender_m" class="label_custom">Male</label>
+                                               
+                                                <div class="multipole_radio_item">
+                                                
+                                                    <input type="radio" id="outcome_gender_un" name="outcome_user">
+                                                    <label for="outcome_gender_un"></label>
+                                                </div>
+                                                <label for="outcome_gender_un" class="label_custom">Other/Unknown</label>
+                                                
+                                            </div>
+                                        </div>
+                                         
+                                         <!-- multipole2 input -->
+                                         <div class="more_input_items">
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item">
+                                                <label for="Address">Street Address</label>
+                                                <input type="text" id="Address" placeholder="Street Address">
+                                            </div>
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item">
+                                                <label for="District">Surburb/District</label>
+                                                <input type="text" id="District" placeholder="Surburb/District">
+                                            </div>
+                                        </div>
+                                        <!-- multipole2 input -->
+                                        <div class="more_input_items">
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item after_icon">
+                                                <label for="Country">Country</label>
+                                                <select name="" id="">
+                                                    <option value="">Select Country</option>
+                                                    <option value="">BANGLADESH</option>
+                                                    <option value="">USA</option>
+                                                    <option value="">CANADA</option>
+                                                </select>
+                                            </div>
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item">
+                                                <label for="Mobile">Mobile</label>
+                                                <input type="text" id="Mobile" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                         <!-- multipole2 input -->
+                                         <div class="more_input_items">
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item">
+                                                <label for="Email">Email</label>
+                                                <input type="email" id="Email" placeholder="Email Address">
+                                            </div>
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item">
+                                                <label for="Postcode">Postcode</label>
+                                                <input type="text" id="Postcode" placeholder="Postcode">
+                                            </div>
+                                        </div>
+                                         <!-- multipole2 input -->
+                                         <div class="more_input_items">
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item after_icon">
+                                                <label for="Professions">Profession</label>
+                                                <select name="" id="Professions">
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                </select>
+                                            </div>
+                                            <!-- 2/1 input -->
+                                            <div class="more_input_item after_icon">
+                                                <label for="Setting">Clinical Setting</label>
+                                                <select name="" id="Setting">
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                    <option value="">Select yours</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 
+                                
+                               </form>
+                            </div>
+                        </div>
+                        <!-- End outcome -->
+                        <!--Start consent -->
+                        <div class="medical_details_area">
+                            <div class="common_heading">
+                                <h3>CONSENT STATEMENT</h3>
+                            </div>
+                            <div class="medical_details_item_area">
+                               <form action="">
+                                 <!-- item -->
+                                 <div class="medical_details_single_item">
+                                    <div class="multipole_radio">
+                                        <span>I, the reporter, agree to be contacted for further follow up regarding this adverse event if necessary.</span>
+                                        <div class="multipole_radio_items custom_radio_check">
+                                            
+                                            <div class="multipole_radio_item">
+                                                <input type="radio" name="concent" id="concent_yes">
+                                                <label for="concent_yes"></label>
+                                            </div>
+                                            <label for="concent_yes" class="label_custom">Yes</label>
+                                           
+                                            <div class="multipole_radio_item">
+                                                
+                                                <input type="radio" id="concent_no" name="concent">
+                                                <label for="concent_no"></label>
+                                            </div>
+                                            <label for="concent_no" class="label_custom">No</label>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!-- item -->
+                                 <div class="more_input_items">
+                                    <!-- 2/1 input -->
+                                    <div class="more_input_item">
+                                        <label for="FulltName">Full Name</label>
+                                        <input type="text" id="FulltName" placeholder="Full Name">
+                                    </div>
+                                    <!-- 2/1 input -->
+                                    <div class="single_input_item">
+                                        <label for="Date">Date</label>
+                                        <input type="date" id="Date">
+                                    </div>
+                                </div>
+                                
+                                
+                               </form>
+                            </div>
+                        </div>
+                        <!--End consent -->
+                        <!-- Start submit -->
+                        <div class="footer_btn">
+                            <div class="social_link">
+                                <ul>
+                                    <li><a href=""><img src="assets/images/icon/print.png" alt="">Print</a></li>
+                                    <li><a href=""><img src="assets/images/icon/save_alt.png" alt="">Save</a></li>
+                                    <li><a href=""><img src="assets/images/icon/share.png" alt="">Share</a></li>
+                                     
+                                </ul>
+                            </div>
+                            <div class="submit_btn">
+                                <button type="submit">submit <img src="assets/images/icon/Vector.png" alt=""></button>
+                            </div>
+                        </div>
+                        <!-- end submit -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+ 
+        <div class="scrollup">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </div>
+
+         <!-- ~~~~~~~~~~ JS Files ~~~~~~~~~~--> 
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>  
+        <script src="assets/js/modernizr-3.11.2.min.js"></script> 
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>

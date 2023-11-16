@@ -1,0 +1,587 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+	font-size: 62.5%
+}
+body{	
+	font-size: 1.6rem;
+	font-weight: 400;
+	font-family: 'Inter', sans-serif;
+	background-color: #E6F7FF;
+}
+h2,h2,h3,h4,h1,h6,p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul li a,a{
+	text-decoration: none;
+}
+.container{
+	max-width: 1170px;
+	width: 100%;
+}
+h1{
+	color: #000;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+label{
+	color: #000;
+	font-size: 14px;
+	font-style: normal;
+	cursor: pointer;
+	line-height: normal;
+	text-transform: capitalize;
+}
+h2{
+	color: #000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+h3{
+	color: #000;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+input::placeholder{
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 13px;
+	font-style: normal;
+	line-height: normal;
+}
+ 
+/* end search */
+.scrollup{
+	height: 40px;
+	text-align: center;
+	width: 40px;
+	position: fixed;
+	z-index: 9999;
+	right: 15px;
+	bottom:45px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+	line-height: 50px;
+	cursor: pointer;
+	display: none;
+	border-radius: 5px;
+}
+.scrollup i{
+	font-size: 18px;
+	color: white;
+}
+
+ /*Start loader */
+ #preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	z-index: 99999999;
+	width: 100%;
+	height: auto;
+  }
+  
+  #status {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	padding: 25px;
+  }
+  
+  #status img {
+	max-width: 100%;
+  }
+  .tab_img span{
+	  display: inline-block;
+	  padding: 10px 0;
+	  font-weight: 400;
+	  font-size: 20px;
+	  color: #132725;
+  }
+  
+  #status:before {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+	width: 100% !important;
+	height: 100% !important;
+	left: 0;
+	top: 0;
+	opacity: 1;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	border-bottom: 2px solid #6666ff;
+	border-radius: 50%;
+	-webkit-animation: rotatingPlus 4s linear infinite;
+			animation: rotatingPlus 4s linear infinite;
+  }
+  
+  #status:after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+	width: 90%;
+	height: 90%;
+	left: 0;
+	top: 0;
+	opacity: 1;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	border-top: 2px solid #FFC900 ;
+	border-radius: 50%;
+	-webkit-animation: rotatingMinus 6s linear infinite;
+			animation: rotatingMinus 6s linear infinite;
+  }
+  
+  @-webkit-keyframes rotatingPlus {
+	from {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	to {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  
+  @keyframes rotatingPlus {
+	from {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	to {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+ 
+ /*End loader */
+
+ /* Start main css */
+ input,select{
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	background-color: white;
+	align-items: center; 
+	border-radius: 7px;
+	margin-top: 15px;
+	width: 100%;
+	font-size: 13px; 
+	color: rgba(0, 0, 0, 0.7); 
+	border: 1px solid var(--gradient, #03B2FF);
+ }
+ .header_main{
+	padding: 30px 0;
+	background-color: white;
+ }
+.logo{
+	text-align: center;
+}
+.logo img{
+	max-width: 500px;
+	width: 100%;
+}
+.body_area{
+	padding: 47px 0px;
+}
+.top_info {
+	margin-bottom: 85px;
+}
+ .top_info h1{
+	text-align: center;
+	position: relative;
+ }
+ .top_info h1:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 156px;
+	height: 10px; 
+	bottom:-25px;
+	border-radius: 5px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+	margin: 0 auto;
+ }
+ .single_input_item{
+	position: relative;
+ }
+ .single_input_item::after {
+	content: "";
+	position: absolute;
+	right: 22px;
+	top: 58%;
+	background: url(../images/icon/date.png),white;
+	height: 25px;
+	width: 21px;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	background-size: 100% 100%;
+}
+.report_main_area {
+	display: flex;
+	justify-content: space-between;
+}
+.report_form_item{
+	flex-basis:49%;
+}
+ .more_input_items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+ }
+ .more_input_item{
+	flex-basis: 48%;
+ }
+ .patient_details_box{
+	border-radius: 7px;
+	margin-top: 35px;
+	border: 1px solid var(--gradient, #03B2FF);
+	background: #FFF; 
+	 
+ }
+.patient_details_box h2{
+	padding: 20px 0px; 
+	text-align: center;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+}
+.multipole_radio_items {
+	display: flex;
+	align-content: center;
+}
+.multipole_radio_item input{
+	width: auto;
+}
+.form_cover_box{
+	padding: 20px;
+	padding-top: 0;
+}
+/* Start custom checkbox */
+div.custom_radio_check input[type="radio"] {
+	position:absolute;
+	opacity: 0;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	-o-opacity: 0;
+ }
+ 
+ div.custom_radio_check input[type="radio"] + label {
+	position:relative;
+	 width: 25px;
+	 height: 25px;
+	 text-indent:-9999px;
+ }
+ 
+ div.custom_radio_check input[type="radio"] + label::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 22px;
+	width: 22px;
+	background: #fff;
+	border: 2px solid #fff;
+	transition: all 0.5s ease;
+	border: 2px solid #03B2FF;
+	border-radius: 2px;
+	/* box-shadow: 0 0 3px #03B2FF; */
+}
+div.custom_radio_check input[type="radio"]:checked + label::after {
+	font-family: 'FontAwesome';
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	content: '\f00c';
+	font-size: 16px;
+	color: #03B2FF;
+	z-index: 99;
+	text-indent: 0;
+	margin: 0;
+}
+.label_custom {
+	margin-right: 15px;
+	margin-left: 7px;
+	margin-top: 2px;
+	font-size: 15px;
+}
+.multipole_radio span{
+	color: #000;
+	font-size: 14px;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.multipole_radio{
+	padding: 15px 0;
+}
+.age_item{
+	display: flex;
+	align-items: center;
+}
+.age_item input{
+	margin: 0;
+}
+.age_item label{
+	margin-right: 30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.age_checkbox_item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.age_chekbox_area {
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.after_icon{
+	position: relative;
+}
+.after_icon::after {
+	content: "";
+	position: absolute;
+	right: 12px;
+	top: 68%;
+	background: url(../images/icon/angle_down.png),white;
+	height: 11px;
+	width: 20px;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	background-size: 100% 100%;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+  }
+  .Clinical{
+	margin-top: 20px;
+	margin-bottom: 40px;
+  }
+/* End custom checkbox */
+.medical_details_area{
+	padding: 30px 20px;
+	margin-top: 35px;
+	background-color: white;
+}
+.common_heading h3{
+	padding: 10px 25px;
+	border-left: 10px solid var(--foundation-blue-blue-900, #014B6B);
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+}
+.multipole_radio textarea{
+	border-radius: 7px;
+	border: 1px solid var(--gradient, #03B2FF);
+	background: #FFF;
+	height: 100px; 
+	width: 100%;
+	padding: 10px;
+}
+textarea
+{
+   resize: none;
+}
+.btn1{
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 1px solid var(--gradient, #03B2FF);
+	color: #000;
+	font-family: Inter;
+	margin-top: 15px;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	display: inline-block;
+}
+.btn1  i{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #03B2FF;
+}
+.medical_details_single_item .single_input_item{
+	max-width: 347px;
+	width: 100%;
+}
+.vaccine_details h4{
+	color: #000;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	margin-bottom: 15px;
+	line-height: normal;
+}
+.vaccine_list_number p {
+	height: 39px;
+	display: inline-block;
+	width: 39px;
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	background-color: #8BDCFF;
+	border-radius: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 7px;
+}
+.vaccine_details_item{
+	display: flex;
+	margin-bottom: 15px;
+	align-items: center;
+}
+.vaccine_details_item:last-child{
+	margin-bottom: 0;
+}
+.vaccine_details_input_area {
+	display: flex;
+	align-items: center;
+}
+.vaccine_details_input_area input:first-child{
+	width: 387px;
+	text-align: left;
+}
+.vaccine_details_input_area input{
+	margin: auto 7px;
+	text-align: center;
+}
+ 
+.medical_details_single_item .single_input_item_report{
+	max-width: 411px;
+	width: 100%;
+}
+.vaccine_details {
+	border-radius: 15px;
+	border: 1px solid var(--gradient, #03B2FF);
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.Outcomes_area .patient_details_box{
+	border-radius: 17px;
+}
+.Outcomes_area .more_input_item{
+	flex-basis: 49%;
+}
+.Outcomes{
+	text-align: center;
+	padding: 15px 0;
+	border-radius: 15px 15px 0px 0px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+}
+.medical_details_item_area .more_input_items .single_input_item{
+	flex-basis: 49%;
+}
+.footer_btn{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.social_link ul{
+	display: flex;
+	align-items: center;
+}
+.social_link ul li a{
+	margin-left: 26px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #000;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	border-radius: 7px;
+	border: 1px solid var(--gradient, #03B2FF);
+	background: #FFF;
+}
+.social_link ul li a img{
+	margin-right: 5px;
+}
+.submit_btn button{
+	padding: 15px 30px;
+	border: none;
+	outline: none;
+	border-radius: 7px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+	color: #000;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.social_link ul li a:hover{
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+}
+.footer_btn{
+	padding: 30px 0;
+}
+.submit_btn button img{
+	margin-left: 5px;
+}
+
+
+
+
+/* Shakil css here  */
+
+
+
+.sk_custom_input input {
+	width: 190px;
+	margin: 0;
+}
+
+.custom_sk_two,
+.custom_sk_four,
+.custom_sk_three,
+.custom_sk_one{
+	display: none;
+}

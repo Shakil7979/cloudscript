@@ -1,0 +1,184 @@
+
+@media all and (max-width:991px){
+    .logo img {
+        max-width: 380px;
+    }
+    .header_main {
+        padding: 15px 0;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .patient_details_box h2 {
+        padding: 12px 0px;
+    }
+    .more_input_item {
+        flex-basis: 100%;
+    }
+    .more_input_items {
+        flex-wrap: wrap;
+    }
+    .age_item {
+        width: 100%;
+    }
+    .age_checkbox_item {
+        flex-wrap: wrap;
+    }
+    .age_chekbox_area {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .more_input_items {
+       padding-top: 5px;
+    }
+    .more_input_item:first-child{
+        margin-bottom: 10px;
+    }
+    .multipole_radio {
+        padding: 5px 0;
+    }
+    .vaccine_details_item {
+        flex-direction: column;
+    }
+    .vaccine_list_number {
+        margin-bottom: 10px;
+    }
+    .vaccine_details_input_area {
+        flex-wrap: wrap;
+    }
+    .vaccine_details_input_area input:first-child {
+        width:46%;
+    }
+    .vaccine_details_input_area input{
+        width: 46%;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .medical_details_item_area .more_input_items .single_input_item {
+        flex-basis: 100%;
+    }
+    
+}
+@media all and (max-width:767px){
+    h1 {
+        font-size: 22px;
+    }
+    .top_info h1::after {
+        height: 5px;
+        bottom: -15px;
+    }
+    .report_main_area {
+        flex-wrap: wrap;
+    }
+    .report_form_item {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .form_cover_box {
+        padding: 10px;
+    }.label_custom {
+        margin-right: 10px;
+        margin-left:0px;
+        font-size: 14px;
+    }
+    .medical_details_area {
+        padding: 20px 10px;
+        margin-top:15px;
+    }
+    .Outcomes {
+        padding: 10px 0;
+    }
+    .patient_details_box h2 {
+        padding: 10px 0px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .Outcomes_area .more_input_item {
+        flex-basis: 100%;
+    }
+    .social_link ul li a {
+        margin-left: 5px;
+        padding: 6px 14px;
+    }
+    .submit_btn button {
+        padding:10px 12px;
+        font-size: 13px;
+    }
+    .footer_btn {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .social_link ul {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .social_link ul li a {
+        font-size: 14px;
+    }
+    .social_link {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .submit_btn {
+        width: 100%;
+        order: -2;
+    }
+    .social_link ul li a img {
+        
+        width: 25%;
+    }
+    .top_info {
+        margin-bottom: 51px;
+    }
+    .body_area {
+        padding-bottom: 0;
+    }
+    .common_heading h3 {
+        padding: 10px 12px;
+    }
+    .scrollup{
+        display: none!important;
+    }
+    .submit_btn button img {
+        margin-left: 0px;
+        width: 16px;
+    }
+    input, select {
+        padding: 10px 10px;
+    }
+    .vaccine_details {
+        padding: 10px;
+    }
+    .single_input_item::after {
+        right: 12px;
+        top: 58%;
+        height: 20px;
+        width:16px;
+    }
+    
+}
+@media all and (max-width:557px){
+    .vaccine_details_input_area input:first-child,.vaccine_details_input_area input {
+        width: 100%;
+    }
+    div.custom_radio_check input[type="radio"] + label::before {
+        top: 3px;
+        left: 0px;
+        height: 18px;
+        width: 18px;
+    }
+    div.custom_radio_check input[type="radio"]:checked + label::after {
+        top: 2px;
+        left: 1px;
+        font-size: 14px;
+        color: #03B2FF;
+        z-index: 99;
+        text-indent: 0;
+        margin: 0;
+    }
+    .logo img {
+        max-width: 260px;
+    }
+}

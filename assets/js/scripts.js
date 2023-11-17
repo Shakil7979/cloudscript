@@ -13,10 +13,6 @@ function myFunction(x) {
 	x.classList.toggle("change");
   }
 
-  
-
-
-
 
 $(document).on('click','.sk_cst_radio',function(){
 	var sk_val = ($(this).val());
@@ -96,21 +92,24 @@ var count = 2;
 $(document).on('click','.details_append_btn',function(){
 
 	count = count + 1;
-	
-	var appendData = ` <div class="vaccine_details_item">
-	<div class="vaccine_list_number">
-		<p>`+count+`</p>
-	</div>
-	<div class="vaccine_details_input_area">
-		<input type="text" placeholder="Vaccine ( Brand Name)">
-		<input type="text" placeholder="Dose No">
-		<input type="text" placeholder="Batch No">
-		<input type="text" placeholder="Date Given">
-		<input type="text" placeholder="Time">
-		<input type="text" placeholder="Route">
-		<input type="text" placeholder="Site">
-	</div>
-</div>`;
+
+	if(count  < 6){
+		var appendData = ` <div class="vaccine_details_item">
+		<div class="vaccine_list_number">
+			<p>`+count+`</p>
+		</div>
+		<div class="vaccine_details_input_area">
+			<input type="text" placeholder="Vaccine ( Brand Name)">
+			<input type="text" placeholder="Dose No">
+			<input type="text" placeholder="Batch No">
+			<input type="text" placeholder="Date Given">
+			<input type="text" placeholder="Time">
+			<input type="text" placeholder="Route">
+			<input type="text" placeholder="Site">
+		</div>
+	</div>`;
+	}
+
 
 	$('.append_data_details').append(appendData);
 

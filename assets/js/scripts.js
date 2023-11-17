@@ -51,36 +51,49 @@ $(document).on('click','.sk_cst_radio_four',function(){
 	}
 });
 
-$(document).on('click','.provide_add_more',function(){
-	
-	var appendData = `<div class="sk_custom_group mb-3">
-	<span>Please provide details of any medical history including details of previous vaccination reactions</span>
-	<textarea name="" id="" cols="30" rows="10"></textarea> 
-</div> `;
+var proveide_count = 1;
+
+$(document).on('click','.provide_add_more',function(){ 
+	proveide_count = proveide_count + 1;
+	if(proveide_count < 4){
+		var appendData = `<div class="sk_custom_group mb-3">
+			<span>Please provide details of any medical history including details of previous vaccination reactions</span>
+			<textarea name="" id="" cols="30" rows="10"></textarea> 
+		</div> `;
+	} 
 
 	$('.sk_app_data').append(appendData);
 
 	return false;
 });
 
+var describe_count = 1;
+
 $(document).on('click','.describe_btn',function(){
+	describe_count = describe_count + 1;
+	if(describe_count < 4){ 
+		var appendData = `<div class="sk_append_text_two mb-3">
+			<span>Please describe the events, including timeline of occurrences:</span>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</div>`;
 	
-	var appendData = `<div class="sk_append_text_two mb-3">
-	<span>Please describe the events, including timeline of occurrences:</span>
-	<textarea name="" id="" cols="30" rows="10"></textarea>
-</div>`;
+	}
 
 	$('.sk_append_data_two').append(appendData);
 
 	return false;
 });
 
+var medcate_count = 1 ;
+
 $(document).on('click','.medcate_about_btn',function(){
-	
-	var appendData = ` <div class="sk_append_text_three mb-3">
-	<span>Please tell us about the medications and/or vaccines the person has had in the last 4 weeks.</span>
-	<textarea name="" id="" cols="30" rows="10"></textarea>
-</div>`;
+	medcate_count = medcate_count + 1;
+	if(medcate_count < 4){ 
+		var appendData = ` <div class="sk_append_text_three mb-3">
+			<span>Please tell us about the medications and/or vaccines the person has had in the last 4 weeks.</span>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</div>`;
+	} 
 
 	$('.sk_append_data_three').append(appendData);
 

@@ -49,17 +49,27 @@
     .vaccine_details_input_area input:first-child {
         width:46%;
     }
-    .vaccine_details_input_area input{
+    /* .vaccine_details_input_area input{
         width: 46%;
         margin-bottom: 10px;
         text-align: left;
-    }
+    } */
     .medical_details_item_area .more_input_items .single_input_item {
         flex-basis: 100%;
+    }
+    .vaccine_details_item .input_box input{
+        width: 100%;
+         
+    }
+    .vaccine_details_item .input_box{
+        margin-bottom: 15px;
     }
     
 }
 @media all and (max-width:767px){
+    .vaccine_details_input_area .input_box{
+        width: 100%;
+    }
     h1 {
         font-size: 22px;
     }
@@ -154,17 +164,26 @@
     }
     .single_input_item::after {
         right: 12px;
-        top: 67%;
+        top: 56%;
         height: 20px;
-        width:16px;
+        width: 16px;
     }
-    .single_input_item::after { 
-        height: 14px;
-        width: 20px;
-    }
+     
     .after_icon::after { 
         height: 14px;
         width: 20px; 
+    }
+    .after_click_view_item {
+        flex-wrap: wrap;
+    }
+    .after_click_view_item span {
+        margin-bottom: 15px;
+    }
+    .input_box.click_text_area {
+        width: 100%;
+    }
+    .after_click_view_item > .more_input_items {
+        width: 100%;
     }
     
 }

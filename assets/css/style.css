@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html{
 	font-size: 62.5%
@@ -7,7 +6,7 @@ html{
 body{	
 	font-size: 1.6rem;
 	font-weight: 400;
-	font-family: 'Inter', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background-color: #E6F7FF;
 }
 h2,h2,h3,h4,h1,h6,p{
@@ -56,7 +55,7 @@ h3{
 	line-height: normal;
 }
 input::placeholder{
-	color: rgba(0, 0, 0, 0.9);
+	color: rgba(0, 0, 0, 0.25);
 	font-size: 13px;
 	font-style: normal;
 	line-height: normal;
@@ -189,12 +188,66 @@ input::placeholder{
 	background-color: white;
 	align-items: center; 
 	border-radius: 7px;
-	margin-top: 15px;
 	width: 100%;
 	font-size: 13px; 
 	color: rgba(0, 0, 0, 0.7); 
-	border: 1px solid var(--gradient, #03B2FF);
+	
  }
+ select{
+	padding: 13px 20px;
+ }
+ .input_box {
+	position: relative;
+	background-color: white;
+	z-index: 9999;
+	margin-top: 15px;
+}
+/* .check_after{
+	position: relative;
+	background-color: white;
+	z-index: 9999;
+}
+.check_after::after {
+	position: absolute;
+	top: -2px;
+	bottom: 1px;
+	left: -2px;
+	right: 1px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+	content: '';
+	z-index: -1;
+	border-radius: 5px;
+} */
+ .input_box:after{
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+    content: '';
+    z-index: -1;
+    border-radius: 7px;
+}
+.btn_after_line::after {
+	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+	content: '';
+	border-radius: 7px;
+	z-index: -1;
+	
+}
+.btn_after_line {
+	position: relative;
+	background: white;
+	margin-top: 15px;
+	z-index: 999999;
+	display: inline-block;
+}
  .header_main{
 	padding: 30px 0;
 	background-color: white;
@@ -235,13 +288,14 @@ input::placeholder{
 	content: "";
 	position: absolute;
 	right: 22px;
-	top: 58%;
+	top: 46px;
 	background: url(../images/icon/date.png),white;
 	height: 25px;
 	width: 21px;
 	background-repeat: no-repeat;
 	pointer-events: none;
 	background-size: 100% 100%;
+	z-index: 999999;
 }
 .report_main_area {
 	display: flex;
@@ -264,9 +318,11 @@ input::placeholder{
 	border-radius: 7px;
 	margin-top: 35px;
 	border: 1px solid var(--gradient, #03B2FF);
+	 
 	background: #FFF; 
 	 
  }
+ 
 .patient_details_box h2{
 	padding: 20px 0px; 
 	text-align: center;
@@ -308,10 +364,12 @@ div.custom_radio_check input[type="radio"] {
 	height: 22px;
 	width: 22px;
 	background: #fff;
-	border: 2px solid #fff;
-	transition: all 0.5s ease;
-	border: 2px solid #03B2FF;
 	border-radius: 2px;
+	border: 2px solid #03B2FF;
+	/* border: 2px solid #fff; */
+	transition: all 0.5s ease;
+	/* border: 2px solid #03B2FF;
+	border-radius: 2px; */
 	/* box-shadow: 0 0 3px #03B2FF; */
 }
 div.custom_radio_check input[type="radio"]:checked + label::after {
@@ -326,11 +384,12 @@ div.custom_radio_check input[type="radio"]:checked + label::after {
 	z-index: 99;
 	text-indent: 0;
 	margin: 0;
+	background: transparent;
 }
 .label_custom {
 	margin-right: 15px;
 	margin-left: 7px;
-	margin-top: 2px;
+	margin-top:-1px;
 	font-size: 15px;
 }
 .multipole_radio span{
@@ -376,13 +435,14 @@ input[type=number] {
 	content: "";
 	position: absolute;
 	right: 12px;
-	top: 68%;
+	top:72%;
 	background: url(../images/icon/angle_down.png),white;
 	height: 11px;
 	width: 20px;
 	background-repeat: no-repeat;
 	pointer-events: none;
 	background-size: 100% 100%;
+	z-index: 99999;
 }
 select {
 	-webkit-appearance: none;
@@ -390,9 +450,10 @@ select {
 	text-indent: 1px;
 	text-overflow: '';
   }
+
   .Clinical{
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 77px;
   }
 /* End custom checkbox */
 .medical_details_area{
@@ -407,7 +468,7 @@ select {
 }
 .multipole_radio textarea{
 	border-radius: 7px;
-	border: 1px solid var(--gradient, #03B2FF);
+	border: 1px solid transparent;
 	background: #FFF;
 	height: 100px; 
 	width: 100%;
@@ -422,15 +483,14 @@ textarea
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 20px;
-	border: 1px solid var(--gradient, #03B2FF);
 	color: #000;
 	font-family: Inter;
-	margin-top: 15px;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
 	display: inline-block;
+	background: white;
 }
 .btn1  i{
 	margin-left: 10px;
@@ -441,7 +501,7 @@ textarea
 	max-width: 347px;
 	width: 100%;
 }
-.vaccine_details h4{
+.vaccine_details h4 {
 	color: #000;
 	font-family: Inter;
 	font-size: 16px;
@@ -449,6 +509,10 @@ textarea
 	font-weight: 500;
 	margin-bottom: 15px;
 	line-height: normal;
+	border-radius: 7px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+	padding: 10px 25px;
+	text-transform: uppercase;
 }
 .vaccine_list_number p {
 	height: 39px;
@@ -479,15 +543,21 @@ textarea
 	display: flex;
 	align-items: center;
 }
-.vaccine_details_input_area input:first-child{
+
+.vaccine_details_input_area input{
+	margin: auto 0px;
+	text-align: center;
+}
+.vaccine_details_input_area .input_box{
+margin-top: 0;
+}
+.vaccine_details_input_area .input_box{
+	margin: 0 5px;
+}
+.max_input input{
 	width: 387px;
 	text-align: left;
 }
-.vaccine_details_input_area input{
-	margin: auto 7px;
-	text-align: center;
-}
- 
 .medical_details_single_item .single_input_item_report{
 	max-width: 411px;
 	width: 100%;
@@ -536,7 +606,7 @@ textarea
 	letter-spacing: 2px;
 	transition: 0.5s;
 	border-radius: 7px;
-	border: 1px solid var(--gradient, #03B2FF);
+	 
 	background: #FFF;
 }
 .social_link ul li a img{
@@ -566,6 +636,26 @@ textarea
 .submit_btn button img{
 	margin-left: 5px;
 }
+.after_click_view_item {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+.after_click_view_item span {
+	margin-bottom: 0;
+	margin-right: 40px;
+}
+.after_click_view_item>.more_input_items {
+	padding-top: 0;
+}
+.input_box_hide_m{
+margin-top: 0;
+}
+.input_box.click_text_area {
+	width: 55%;
+	margin: auto auto;
+	margin-top: 15px;
+}
 
 
 
@@ -579,9 +669,77 @@ textarea
 	margin: 0;
 }
 
+.sk_outcomes,
+.custom_no_five,
+.custom_no_six,
+.custom_no_one, 
+.custom_no_two, 
+.custom_no_three, 
+.custom_no_four, 
 .custom_sk_two,
+.custom_sk_five,
+.custom_sk_six,
 .custom_sk_four,
 .custom_sk_three,
 .custom_sk_one{
 	display: none;
+}
+
+.sk_sex_male {
+	display: flex; 
+	padding: 5px 10px;
+	align-items: center;
+	border-radius: 5px; 
+	background: #fff;
+}
+.sk_sex_male.active { 
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));  
+}
+ 
+
+.sk_sex_male  input[type="radio"] + label::before { 
+	background: transparent !important; 
+	border: none !important; 
+} 
+ 
+
+.sk_sex_male.active  input[type="radio"]:checked + label::after { 
+	color: #000 !important; 
+	top: 6px !important;;
+  	left: 8px !important;;
+}
+
+.sk_sex_male  input[type="radio"]:checked + label::after {  
+	top: 6px !important;;
+  	left: 8px !important;;
+}
+
+.sk_custom_radio{
+	margin-top: 15px;
+}
+
+.sk_custom_radio { 
+	gap: 15px;
+	align-items: center;
+}
+
+.sk_custom_radio span{
+	margin-bottom: 0 !important;
+}
+
+.border_line{
+	position: relative;
+	background: #fff;
+}
+
+.border_line::after {
+	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+	content: '';
+	z-index: -1;
+	border-radius: 7px;
 }

@@ -669,6 +669,8 @@ margin-top: 0;
 	margin: 0;
 }
 
+.custom_sk_seven,
+.custom_no_seven,
 .sk_outcomes,
 .custom_no_five,
 .custom_no_six,
@@ -806,3 +808,8 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
 	margin-right: 20px;
  }
  
+
+
+ .sk_label_custom { 
+	padding: 6px 16px;
+}

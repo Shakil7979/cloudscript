@@ -13,6 +13,12 @@ function myFunction(x) {
 	x.classList.toggle("change");
   }
 
+$('.sk_multipole_radio_item').hide();
+
+$(document).on('click','.child_class_item',function(){ 
+	$(this).find('.sk_multipole_radio_item').show();
+	$(this).find('.label_custom').css({'padding-left':'0'});
+});
 
 $(document).on('click','.sk_cst_radio',function(){
 	var sk_val = ($(this).val());
@@ -102,6 +108,21 @@ $(document).on('click','.sk_cst_radio_6',function(){
 	else{
 		$('.custom_sk_six').fadeOut(); 
 		$('.custom_no_six').fadeOut();
+	}
+});
+
+$(document).on('click','.sk_cst_radio_7',function(){
+	var sk_val2 = ($(this).val());
+	if(sk_val2 == 1){ 
+		$('.custom_sk_seven').fadeIn();
+		$('.custom_no_seven').fadeOut();
+	}else if(sk_val2 == 2){ 
+		$('.custom_sk_seven').fadeOut();
+		$('.custom_no_seven').fadeIn();
+	} 
+	else{
+		$('.custom_sk_seven').fadeOut(); 
+		$('.custom_no_seven').fadeOut();
 	}
 });
 

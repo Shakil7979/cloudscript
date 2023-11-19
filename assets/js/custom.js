@@ -1,7 +1,14 @@
 $(document).ready(function(){
-	$('.child_class_item').click(function(){
-		$('.child_class_item').removeClass('activelink');
-		$(this).addClass('activelink');
-		
+	$('.child_class_item_1').click(function(){
+		$('.child_class_item_1').removeClass('activelink');
+		$(this).addClass('activelink'); 
+	});
+	$('.child_class_item_2').click(function(){
+		$('.child_class_item_2').removeClass('activelink');
+		$(this).addClass('activelink'); 
+	});
+	$('.child_class_item_3').click(function(){
+		$('.child_class_item_3').removeClass('activelink');
+		$(this).addClass('activelink'); 
 	});
 });

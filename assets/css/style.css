@@ -794,6 +794,7 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
 	/* border-radius: 2px; */
 	/* box-shadow: 0 0 3px #03B2FF; */
 }
+
  .activelink{
 	border-radius: 5px;
 	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));

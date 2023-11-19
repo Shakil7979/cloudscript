@@ -11,4 +11,12 @@ $(document).ready(function(){
 		$('.child_class_item_3').removeClass('activelink');
 		$(this).addClass('activelink'); 
 	});
+	$('.child_class_item_4').click(function(){
+		$('.child_class_item_4').removeClass('activelink');
+		$(this).addClass('activelink'); 
+	});
+	$('.unkown_age_sk').click(function(){
+		$('.unkown_age_sk').removeClass('activelink');
+		$(this).addClass('activelink'); 
+	});
 });

@@ -64,7 +64,26 @@
     .vaccine_details_item .input_box{
         margin-bottom: 15px;
     }
-    
+    .age_checkbox_item .age_item .input_box{
+        width: 100%;
+    }
+    .age_chekbox_area span {
+        padding: 0px 10px 0 0px;
+        display: inline-block;
+    }
+    .age_item label {
+        margin-right: 16px;
+    }
+    .report_main_area {
+        flex-wrap: wrap;
+    }
+    .report_form_item {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .Clinical {
+        margin-bottom: 15px;
+    }
 }
 @media all and (max-width:767px){
     .vaccine_details_input_area .input_box{
@@ -78,13 +97,8 @@
         bottom: -15px;
     }
 
-    .report_main_area {
-        flex-wrap: wrap;
-    }
-    .report_form_item {
-        flex-basis: 100%;
-        width: 100%;
-    }
+    
+   
     .form_cover_box {
         padding: 10px;
     }.label_custom {
@@ -109,7 +123,7 @@
         flex-basis: 100%;
     }
     .social_link ul li a {
-        margin-left: 5px;
+
         padding: 6px 14px;
     }
     .submit_btn button {
@@ -194,6 +208,14 @@
     }
     .after_click_view_item span {
         width: 100%;
+    }
+    .after_click_view_item > .more_input_items {
+        flex: 0 0 100%;
+    }
+    .social_link ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
     
 }

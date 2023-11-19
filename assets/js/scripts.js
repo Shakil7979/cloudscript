@@ -16,12 +16,11 @@ function myFunction(x) {
 $('.sk_multipole_radio_item').hide();
 
 $(document).on('click','.child_class_item',function(){ 
-	$(this).find('.sk_multipole_radio_item').show();
-	$(this).find('.label_custom').css({'padding-left':'0'});
+	$(this).find('.sk_multipole_radio_item').show(); 
 });
 
 $(document).on('click','.sk_cst_radio',function(){
-	var sk_val = ($(this).val());
+	var sk_val = ($(this).attr('value'));
 	if(sk_val == 1){ 
 		$('.custom_sk_one').fadeIn();
 		$('.custom_no_one').fadeOut();
@@ -37,7 +36,7 @@ $(document).on('click','.sk_cst_radio',function(){
 
 
 $(document).on('click','.sk_cst_radio_two',function(){
-	var sk_val2 = ($(this).val());
+	var sk_val2 = ($(this).attr('value'));
 	if(sk_val2 == 1){ 
 		$('.custom_sk_two').fadeIn();
 		$('.custom_no_two').fadeOut();
@@ -52,7 +51,7 @@ $(document).on('click','.sk_cst_radio_two',function(){
 });
 
 $(document).on('click','.sk_cst_radio_three',function(){
-	var sk_val2 = ($(this).val());
+	var sk_val2 = ($(this).attr('value'));
 	if(sk_val2 == 1){ 
 		$('.custom_sk_three').fadeIn();
 		$('.custom_no_three').fadeOut();
@@ -67,7 +66,7 @@ $(document).on('click','.sk_cst_radio_three',function(){
 });
 
 $(document).on('click','.sk_cst_radio_four',function(){
-	var sk_val2 = ($(this).val());
+	var sk_val2 = ($(this).attr('value'));
 	if(sk_val2 == 1){ 
 		$('.custom_sk_four').fadeIn();
 		$('.custom_no_four').fadeOut();
@@ -82,7 +81,7 @@ $(document).on('click','.sk_cst_radio_four',function(){
 });
 
 $(document).on('click','.sk_cst_radio_5',function(){
-	var sk_val2 = ($(this).val());
+	var sk_val2 = ($(this).attr('value'));
 	if(sk_val2 == 1){ 
 		$('.custom_sk_five').fadeIn();
 		$('.custom_no_five').fadeOut();
@@ -97,7 +96,7 @@ $(document).on('click','.sk_cst_radio_5',function(){
 });
 
 $(document).on('click','.sk_cst_radio_6',function(){
-	var sk_val2 = ($(this).val());
+	var sk_val2 = ($(this).attr('value'));
 	if(sk_val2 == 1){ 
 		$('.custom_sk_six').fadeIn();
 		$('.custom_no_six').fadeOut();
@@ -112,7 +111,7 @@ $(document).on('click','.sk_cst_radio_6',function(){
 });
 
 $(document).on('click','.sk_cst_radio_7',function(){
-	var sk_val2 = ($(this).val());
+	var sk_val2 = ($(this).attr('value'));
 	if(sk_val2 == 1){ 
 		$('.custom_sk_seven').fadeIn();
 		$('.custom_no_seven').fadeOut();

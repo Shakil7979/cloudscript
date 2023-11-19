@@ -191,7 +191,7 @@ input::placeholder,textarea::placeholder{
 	width: 100%;
 	font-size: 13px; 
 	color: rgba(0, 0, 0, 0.7); 
-	
+	height: 40px;
  }
  select{
 	padding: 13px 20px;
@@ -402,9 +402,10 @@ div.custom_radio_check input[type="radio"]:checked + label::after {
 .multipole_radio{
 	padding: 15px 0;
 }
-.age_item{
+.age_item {
 	display: flex;
 	align-items: center;
+	width: 88%;
 }
 .age_item input{
 	margin: 0;
@@ -424,13 +425,28 @@ input[type=number] {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-top: 15px;
 }
 .age_chekbox_area {
-	margin-left: 15px;
-	margin-top:20px;
+	margin-left: 0;
+	margin-top: 0;
+	display: flex;
+	align-items: center;
+	gap: 10;
+	gap: 16px;
+}
+.age_chekbox_area span{
+	padding: 0px 10px 0 20px;
+  	display: inline-block;
+}
+.age_checkbox_item .input_box{
+	margin-top: 0;
 }
 .after_icon{
 	position: relative;
+}
+.ouknow_item {
+	margin-top: 0;
 }
 .after_icon::after {
 	content: "";
@@ -452,10 +468,10 @@ select {
 	text-overflow: '';
   }
 
-  .Clinical{
+  .Clinical {
 	margin-top: 20px;
-	margin-bottom:55px;
-  }
+	margin-bottom: 56px;
+}
 /* End custom checkbox */
 .medical_details_area{
 	padding: 30px 20px;
@@ -608,6 +624,17 @@ margin-top: 0;
 	border-radius: 7px;
 	background: #FFF;
 }
+.ouknow_item a {
+	display: inline-block;
+	padding: 10px 20px;
+	color: #000;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+	transition: 0.5s;
+	border-radius: 7px;
+	background: #FFF;
+}
 .social_link ul li a img{
 	margin-right: 5px;
 }
@@ -642,7 +669,7 @@ margin-top: 0;
 }
 .after_click_view_item span {
 	margin-bottom: 0;
-	width:24%;
+	width: 30%;
 }
 .after_click_view_item > .more_input_items {
 	padding-top: 0;
@@ -744,7 +771,7 @@ margin-top: 0;
 	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
 	content: '';
 	z-index: -1;
-	border-radius: 0px;
+	border-radius: 3px;
 }
 
 /* gender design */
@@ -811,6 +838,49 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
  
 
 
- .sk_label_custom { 
-	padding: 6px 16px;
+ .sk_label_custom {
+	padding: 5px 10px;
+	margin: 0;
+}
+
+
+.report_main_area .input_box { 
+	margin-top: 0;
+}
+
+.report_main_area .multipole_radio_2 {
+	margin: 5px 0 0 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.single_input_item label {
+	margin-bottom: 15px;
+}
+
+.input_box { 
+	margin-top: 0;
+}
+
+.more_input_item label {
+	margin-bottom: 15px;
+}
+
+.sk_outcomes .multipole_radio_2 { 
+	margin-top: 0;  
+	padding: 20px 0 0 0;
+}
+
+.sk_age .input_box {
+	max-width: 155px;
+	width: 100%;
+}
+
+.sk_age { 
+	max-width: 85%;
+	width: 100%;
+}
+
+.input_box.sk_input_age input {
+	padding: 10px 17px !important;
+	width: 64px;
 }

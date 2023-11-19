@@ -7,7 +7,7 @@ body{
 	font-size: 1.6rem;
 	font-weight: 400;
 	font-family: 'Poppins', sans-serif;
-	background-color: #E6F7FF;
+	background-color:#E6F7FF;
 }
 h2,h2,h3,h4,h1,h6,p{
 	margin: 0;
@@ -54,7 +54,7 @@ h3{
 	font-weight: 500;
 	line-height: normal;
 }
-input::placeholder{
+input::placeholder,textarea::placeholder{
 	color: rgba(0, 0, 0, 0.25);
 	font-size: 13px;
 	font-style: normal;
@@ -246,6 +246,7 @@ input::placeholder{
 	background: white;
 	margin-top: 15px;
 	z-index: 999999;
+	border-radius: 7px;
 	display: inline-block;
 }
  .header_main{
@@ -288,7 +289,7 @@ input::placeholder{
 	content: "";
 	position: absolute;
 	right: 22px;
-	top: 46px;
+	bottom: 10px;
 	background: url(../images/icon/date.png),white;
 	height: 25px;
 	width: 21px;
@@ -307,7 +308,7 @@ input::placeholder{
  .more_input_items{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	padding-top: 20px;
 	box-sizing: border-box;
  }
@@ -426,7 +427,7 @@ input[type=number] {
 }
 .age_chekbox_area {
 	margin-left: 15px;
-	margin-top: 5px;
+	margin-top:20px;
 }
 .after_icon{
 	position: relative;
@@ -435,7 +436,7 @@ input[type=number] {
 	content: "";
 	position: absolute;
 	right: 12px;
-	top:72%;
+	bottom: 14px;
 	background: url(../images/icon/angle_down.png),white;
 	height: 11px;
 	width: 20px;
@@ -453,7 +454,7 @@ select {
 
   .Clinical{
 	margin-top: 20px;
-	margin-bottom: 77px;
+	margin-bottom:55px;
   }
 /* End custom checkbox */
 .medical_details_area{
@@ -592,13 +593,12 @@ margin-top: 0;
 .social_link ul{
 	display: flex;
 	align-items: center;
+	gap: 26px;
 }
 .social_link ul li a{
-	margin-left: 26px;
 	display: inline-block;
 	padding: 10px 20px;
 	color: #000;
-	font-family: Inter;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 500;
@@ -606,7 +606,6 @@ margin-top: 0;
 	letter-spacing: 2px;
 	transition: 0.5s;
 	border-radius: 7px;
-	 
 	background: #FFF;
 }
 .social_link ul li a img{
@@ -638,23 +637,24 @@ margin-top: 0;
 }
 .after_click_view_item {
 	display: flex;
-	align-items: center;
+	 
 	margin-top: 15px;
 }
 .after_click_view_item span {
 	margin-bottom: 0;
-	margin-right: 40px;
+	width:24%;
 }
-.after_click_view_item>.more_input_items {
+.after_click_view_item > .more_input_items {
 	padding-top: 0;
+	flex-wrap: wrap;
+	flex: 0 0 40%;
 }
 .input_box_hide_m{
 margin-top: 0;
 }
 .input_box.click_text_area {
-	width: 55%;
-	margin: auto auto;
-	margin-top: 15px;
+	width: 100%;
+	margin-top: 20px;
 }
 
 
@@ -730,6 +730,7 @@ margin-top: 0;
 .border_line{
 	position: relative;
 	background: #fff;
+	z-index: 9;
 }
 
 .border_line::after {
@@ -741,5 +742,67 @@ margin-top: 0;
 	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
 	content: '';
 	z-index: -1;
-	border-radius: 7px;
+	border-radius: 0px;
 }
+
+/* gender design */
+.gender_btn{
+	display: flex;
+	align-items: center;
+}
+.gender_btn li{
+	margin-right: 15px;
+}
+.child_class_item{
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+.child_class_item .check_after::before{
+	border: none!important;
+}
+div.custom_radio_check_2 input[type="radio"]:checked + label::after {
+	font-family: 'FontAwesome';
+	display: block;
+	position: absolute;
+	top: 6px;
+  	left: 8px;
+	content: '\f00c';
+	font-size: 16px;
+	color: #0b0c0c;
+	z-index: 99;
+	text-indent: 0;
+	margin: 0;
+	background: transparent;
+}
+div.custom_radio_check_2 input[type="radio"] + label::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 22px;
+	width: 22px;
+	background: transparent;
+	border-radius: 2px;
+	border: 2px solid #03B2FF;
+	/* border: 2px solid #fff; */
+	transition: all 0.5s ease;
+	/* border: 2px solid #03B2FF; */
+	/* border-radius: 2px; */
+	/* box-shadow: 0 0 3px #03B2FF; */
+}
+ .activelink{
+	border-radius: 5px;
+	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
+ }
+ .multipole_radio_2{
+	display: flex;
+	margin-top: 15px;
+	align-items: center;
+ }
+ .multipole_radio_2 span{
+	margin-bottom: 0;
+	margin-right: 20px;
+ }
+ 

@@ -241,10 +241,13 @@ input::placeholder,textarea::placeholder{
 	z-index: -1;
 	
 }
+.pt20{
+	padding-top: 20px;
+}
 .btn_after_line {
 	position: relative;
 	background: white;
-	margin-top: 15px;
+	margin-top:20px;
 	z-index: 999999;
 	border-radius: 7px;
 	display: inline-block;
@@ -400,7 +403,7 @@ div.custom_radio_check input[type="radio"]:checked + label::after {
 	display: inline-block;
 }
 .multipole_radio{
-	padding: 15px 0;
+	margin-top: 20px;
 }
 .age_item {
 	display: flex;
@@ -425,7 +428,7 @@ input[type=number] {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 15px;
+	margin-top:20px;
 }
 .age_chekbox_area {
 	margin-left: 0;
@@ -550,7 +553,7 @@ textarea
 }
 .vaccine_details_item{
 	display: flex;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	align-items: center;
 }
 .vaccine_details_item:last-child{
@@ -683,8 +686,12 @@ margin-top: 0;
 	width: 100%;
 	margin-top: 20px;
 }
-
-
+.mb-3 {
+	margin-bottom: 0 !important;
+}
+.sk_append_text_three.mb-3 {
+	margin-top: 20px;
+}
 
 
 /* Shakil css here  */
@@ -828,7 +835,6 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
  }
  .multipole_radio_2{
 	display: flex;
-	margin-top: 15px;
 	align-items: center;
  }
  .multipole_radio_2 span{
@@ -847,12 +853,7 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
 .report_main_area .input_box { 
 	margin-top: 0;
 }
-
-.report_main_area .multipole_radio_2 {
-	margin: 5px 0 0 0 !important;
-	padding-bottom: 0 !important;
-}
-
+ 
 .single_input_item label {
 	margin-bottom: 15px;
 }

@@ -26,17 +26,12 @@
     }
     .age_chekbox_area {
         margin-left: 0;
-        margin-top: 15px;
+        margin-top: 20px;
     }
-    .more_input_items {
-       padding-top: 5px;
+    .more_input_item:first-child {
+        margin-bottom: 20px;
     }
-    .more_input_item:first-child{
-        margin-bottom: 10px;
-    }
-    .multipole_radio {
-        padding: 5px 0;
-    }
+  
     .vaccine_details_item {
         flex-direction: column;
     }
@@ -61,8 +56,8 @@
         width: 100%;
          
     }
-    .vaccine_details_item .input_box{
-        margin-bottom: 15px;
+    .vaccine_details_item .input_box {
+        margin-bottom: 20px;
     }
     .age_checkbox_item .age_item .input_box{
         width: 100%;
@@ -83,6 +78,9 @@
     }
     .Clinical {
         margin-bottom: 15px;
+    }
+    .report_form_item:last-child{
+        margin-top: 20px;
     }
 }
 @media all and (max-width:767px){

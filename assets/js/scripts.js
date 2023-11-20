@@ -127,12 +127,15 @@ $(document).on('click','.sk_cst_radio_7',function(){
 
 $(document).on('click','.sk_report_click',function(){
 	var report_details = ($(this).attr('data_id'));
+	$('.sk_report_click').css({'background':'#fff'});
+	$(this).css({'background':'var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%))'}); 
 	if(report_details == 3){ 
 		$('.sk_report_content_tab').fadeIn(); 
 	} 
 	else{ 
-		$('.sk_report_content_tab').fadeOut();
+		$('.sk_report_content_tab').fadeOut(); 
 	}
+	
 
 	return false
 });

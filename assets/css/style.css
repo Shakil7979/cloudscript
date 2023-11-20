@@ -918,3 +918,9 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
 	font-weight: 500;
 	line-height: normal;
 }
+
+.sk_report_btn ul {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}

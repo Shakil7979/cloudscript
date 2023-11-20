@@ -217,10 +217,10 @@ $(document).on('click','.details_append_btn',function(){
                                                         <input type="text" placeholder="Batch No">
                                                     </div>
                                                     <div class="input_box">
-                                                        <input type="text" placeholder="Date Given">
+                                                        <input type="date" placeholder="Date Given">
                                                     </div>
                                                     <div class="input_box">
-                                                        <input type="text" placeholder="Time">
+                                                        <input type="time" placeholder="Time">
                                                     </div>
                                                     <div class="input_box">
                                                         <input type="text" placeholder="Route">

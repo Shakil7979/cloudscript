@@ -483,6 +483,7 @@ select {
 }
 .common_heading h3{
 	padding: 10px 25px;
+	text-transform: uppercase;
 	border-left: 10px solid var(--foundation-blue-blue-900, #014B6B);
 	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
 }

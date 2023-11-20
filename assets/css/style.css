@@ -54,8 +54,8 @@ h3{
 	font-weight: 500;
 	line-height: normal;
 }
-input::placeholder,textarea::placeholder{
-	color: rgba(0, 0, 0, 0.25);
+input::placeholder, textarea::placeholder {
+	color: rgba(0, 0, 0, 0.75);
 	font-size: 13px;
 	font-style: normal;
 	line-height: normal;
@@ -473,7 +473,7 @@ select {
 
   .Clinical {
 	margin-top: 20px;
-	margin-bottom: 56px;
+	margin-bottom: 120px;
 }
 /* End custom checkbox */
 .medical_details_area{
@@ -705,7 +705,7 @@ margin-top: 0;
 
 .custom_sk_seven,
 .custom_no_seven,
-.sk_outcomes,
+.sk_report_content_tab,
 .custom_no_five,
 .custom_no_six,
 .custom_no_one, 
@@ -884,4 +884,37 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
 .input_box.sk_input_age input {
 	padding: 10px 17px !important;
 	width: 64px;
+}
+
+.sk_flex_input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sk_flex_input .input_box { 
+	flex: 0 0 60%;
+}
+
+.sk_flex_input label {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.sk_input_fulwidth{
+	margin-top: 20px;
+}
+
+.social_link ul li a {
+	display: inline-block;
+	padding: 10px 20px; 
+	letter-spacing: 0;
+	transition: 0.5s;
+	border-radius: 7px;
+	background: #FFF;
+	color: #000; 
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }

@@ -125,14 +125,16 @@ $(document).on('click','.sk_cst_radio_7',function(){
 	}
 });
 
-$(document).on('change','.report_details',function(){
-	var report_details = ($(this).val());
+$(document).on('click','.sk_report_click',function(){
+	var report_details = ($(this).attr('data_id'));
 	if(report_details == 3){ 
-		$('.sk_outcomes').fadeIn(); 
+		$('.sk_report_content_tab').fadeIn(); 
 	} 
 	else{ 
-		$('.sk_outcomes').fadeOut();
+		$('.sk_report_content_tab').fadeOut();
 	}
+
+	return false
 });
 
 var proveide_count = 1;

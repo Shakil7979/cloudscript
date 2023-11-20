@@ -215,6 +215,12 @@
         align-items: center;
         gap: 10px;
     }
+    .sk_report_btn.social_link {
+        margin-top: 0;
+    }
+    .sk_report_btn .btn_after_line { 
+        margin-top: 10px; 
+    }
     
 }
 @media all and (max-width:557px){
@@ -235,5 +241,11 @@
     }
     .logo img {
         max-width: 260px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 16px;
     }
 }

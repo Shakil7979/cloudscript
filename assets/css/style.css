@@ -574,8 +574,8 @@ margin-top: 0;
 .vaccine_details_input_area .input_box{
 	margin: 0 5px;
 }
-.max_input input{
-	width: 387px;
+.max_input input {
+	width: 280px;
 	text-align: left;
 }
 .medical_details_single_item .single_input_item_report{
@@ -641,29 +641,29 @@ margin-top: 0;
 .social_link ul li a img{
 	margin-right: 5px;
 }
-.submit_btn button{
-	padding: 15px 30px;
+.submit_btn button { 
 	border: none;
 	outline: none;
 	border-radius: 7px;
 	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
-	color: #000;
-	font-family: Inter;
-	font-size: 20px;
+	color: #000; 
+	font-size: 14px;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: normal;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding: 10px 20px;
 }
 .social_link ul li a:hover{
 	background: var(--gradient, linear-gradient(89deg, #03B2FF 2.64%, #04FBCD 98.06%));
 }
-.footer_btn{
-	padding: 30px 0;
+.footer_btn {
+	padding: 55px 0;
 }
-.submit_btn button img{
+.submit_btn button img {
 	margin-left: 5px;
+	width: 20px;
 }
 .after_click_view_item {
 	display: flex;
@@ -899,6 +899,7 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
 .sk_flex_input label {
 	margin-bottom: 0;
 	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .sk_input_fulwidth{
@@ -923,4 +924,8 @@ div.custom_radio_check_2 input[type="radio"] + label::before {
 	display: flex;
 	align-items: center;
 	gap: 30px;
+}
+
+.sk_social_btn ul li{
+	margin-top: 0;
 }
